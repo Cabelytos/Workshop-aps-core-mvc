@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using VendsWeb.Models;
+using VendsWeb.Models.ViewModels;
+
 
 namespace VendsWeb.Controllers
 {
@@ -17,7 +19,8 @@ namespace VendsWeb.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Transportes Monteiro";
+            ViewData["Email"] = "leonardo@gmail.com";// top!
 
             return View();
         }
